@@ -1,13 +1,89 @@
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
+	--radius-s: 2px;
+	--radius-m: 4px;
+	--radius-l: 8px;
+	--input-radius: 2px;
 	--tab-radius-active: 0px;
 	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--toggle-radius: 16px;
+	--toggle-thumb-radius: 16px;
+	--slider-thumb-radius: 16px;
+}
+
+.theme-dark {
+	--color-primary: #ff6798;
+	--color-primary-hover: #ffadc2;
+    
+	--color-base-00: #202330;
+	--color-base-05: #282b3b;
+	--color-base-10: #282b3b;
+	--color-base-20: #282b3b;
+	--color-base-25: #3c4156;
+	--color-base-30: #3c4156;
+	--color-base-35: #505671;
+	--color-base-40: #505671;
+	--color-base-50: #949ab5;
+	--color-base-60: #aeb2c7;
+	--color-base-70: #e4e5ec;
+	--color-base-100: #efefef;
+
+	--background-primary: var(--color-base-00);
+	--background-secondary: var(--color-base-05);
+	--background-secondary-alt: var(--color-base-25);
+
+	--text-selection: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-05);
+
+	--ribbon-background: var(--color-base-00);
+
+	--accent-h: 341;
+	--accent-s: 100%;
+	--accent-l: 70%;
+
+	--header-height: 42px;
+	--text-on-accent: var(--color-base-00);
+	--text-normal: var(--color-base-70);
+	--text-muted: var(--color-base-60);
+
+	--background-modifier-form-field: var(--color-base-00);
+
+	--link-color: var(--color-primary);
+	--link-color-hover: var(--color-primary-hover);
+
+
+	--color-red: #ee4343;
+	--color-orange: #f3a909;
+	--color-yellow: #f7d669;
+	--color-green: #a3e441;
+	--color-cyan: #46d0f3;
+	--color-blue: #3b8eea;
+	--color-purple: #d670d6;
+	--color-pink: #ff6798;
+	--color-red-rgb: 238, 67, 67;
+	--color-orange-rgb: 243, 169, 9;
+	--color-yellow-rgb: 247, 214, 105;
+	--color-green-rgb: 163, 228, 65;
+	--color-cyan-rgb: 70, 208, 243;
+	--color-blue-rgb: 59, 142, 234;
+	--color-purple-rgb: 214, 112, 214;
+	--color-pink-rgb: 255, 103, 152;
+}
+
+button {
+	font-weight: 500;
+}
+
+.mod-root .workspace-tab-header.is-active {
+	border-top: 1px solid var(--color-primary);
+	padding-top: 2px;
+}
+
+.app-container {
+	border-bottom: 24px solid var(--color-primary);
+}
+
+.status-bar {
+	bottom: 24px;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
