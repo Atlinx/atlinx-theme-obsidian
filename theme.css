@@ -8,6 +8,9 @@ body {
 	--toggle-radius: 16px;
 	--toggle-thumb-radius: 16px;
 	--slider-thumb-radius: 16px;
+
+	--tab-outline-width: 0px;
+	--divider-width: 0px;
 }
 
 .theme-dark {
