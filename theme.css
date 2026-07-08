@@ -13,6 +13,7 @@ body {
 	--divider-width: 0px;
 }
 
+.is-mobile.theme-dark,
 .theme-dark {
 	--color-primary-00: #7e003b;
 	--color-primary-50: #ff6798;
